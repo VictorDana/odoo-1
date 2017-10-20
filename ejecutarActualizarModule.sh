@@ -3,5 +3,8 @@
 
 #Ejecuta actualizando el modulo puesto a continuacion.
 #Igual que tambien tenemos que poner la empresa a ejecutar
+echo "Introduzca el nombre del modulo:"
+read modul
 
-odoo --config /var/lib/odoo/.odoo_serverrc -d ccx -u modul1 --save
+#odoo --config /var/lib/odoo/.odoo_serverrc -d ccx -u tasks --save
+odoo --config /var/lib/odoo/.odoo_serverrc -d ccx -u $modul

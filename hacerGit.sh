@@ -3,11 +3,10 @@
 
 #hacer git de toda la carpeta
 git add *
-#hacer commit - cambiar el mensaje por el que queremos
-#Parte comentario automatico
+#Escribir comentario
 echo 'Dime el mensaje para el commit : '
 read nombre
 
-git commit -m $nombre
+git commit -m "$nombre"
 #hacer el push para subir los archivos
 git push -u origen master
