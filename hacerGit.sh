@@ -1,10 +1,10 @@
 #!/bin/bash
 #DanielVila
 
-#hacer git de toda la carpeta
+#Hacer git de toda la carpeta entera
 git add *
 #Escribir comentario
-echo 'Dime el mensaje para el commit : '
+echo 'Escribe el mensaje para el commit : '
 read nombre
 
 git commit -m "$nombre"

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
   <data>
     <record model="ir.ui.view" id="tots.net_tree">
@@ -6,7 +7,7 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-	  <field name="net_ip"/>
+          <field name="net_ip"/>
           <field name="mask"/>
           <field name="net_map"/>
           <field name="net_class"/>
@@ -21,8 +22,8 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-	  <field name="number"/>
-	  <field name="ip"/>
+          <field name="number"/>
+          <field name="ip"/>
           <field name="ping"/>
           <field name="registered"/>
           <field name="uptime"/>
@@ -31,39 +32,45 @@
         </tree>
       </field>
     </record>
-
     <record model="ir.ui.view" id="tots.net_form">
       <field name="name">net form</field>
       <field name="model">tots.net</field>
       <field name="arch" type="xml">
-        <form><sheet><group>
-          <field name="name"/>
-	  <field name="net_ip"/>
-          <field name="mask"/>
-          <field name="net_map" widget="image"/>
-          <field name="net_class"/>
-          <field name="pcs"/>
-          <field name="servers"/>
-        </group></sheet></form>
+        <form>
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="net_ip"/>
+              <field name="mask"/>
+              <field name="net_map" widget="image"/>
+              <field name="net_class"/>
+              <field name="pcs"/>
+              <field name="servers"/>
+            </group>
+          </sheet>
+        </form>
       </field>
     </record>
     <record model="ir.ui.view" id="tots.pc_form">
       <field name="name">pc form</field>
       <field name="model">tots.pc</field>
       <field name="arch" type="xml">
-        <form><sheet><group>
-          <field name="name"/>
-	  <field name="number"/>
-	  <field name="ip"/>
-          <field name="ping"/>
-          <field name="registered"/>
-          <field name="uptime"/>
-          <field name="net"/>
-          <field name="servers"/>
-        </group></sheet></form>
+        <form>
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="number"/>
+              <field name="ip"/>
+              <field name="ping"/>
+              <field name="registered"/>
+              <field name="uptime"/>
+              <field name="net"/>
+              <field name="servers"/>
+            </group>
+          </sheet>
+        </form>
       </field>
     </record>
-
     <record model="ir.actions.act_window" id="tots.net_action_window">
       <field name="name">net window</field>
       <field name="res_model">tots.net</field>
@@ -74,8 +81,6 @@
       <field name="res_model">tots.pc</field>
       <field name="view_mode">tree,form</field>
     </record>
-
-
     <!-- Top menu item -->
     <menuitem name="Redes" id="tots.menu_root"/>
     <!-- menu categories -->

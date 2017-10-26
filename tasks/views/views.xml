@@ -27,7 +27,6 @@
     <menuitem name="Menu" id="tasks.menu_1" parent="tasks.menu_root"/>
     <!-- actions -->
 
-    <menuitem name="List" id="tasks.menu_1_list" parent="tasks.menu_1"
-              action="tasks.action_window"/>
+    <menuitem name="List" id="tasks.menu_1_list" parent="tasks.menu_1" action="tasks.action_window"/>
   </data>
 </odoo>

@@ -1,0 +1,27 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="fitxers.list">
+      <field name="name">fitxers list</field>
+      <field name="model">fitxers.fitxers</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="fitxers.action_window">
+      <field name="name">fitxers window</field>
+      <field name="res_model">fitxers.fitxers</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Top menu item -->
+    <menuitem name="Fitxers" id="fitxers.menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Menu 1" id="fitxers.menu_1" parent="fitxers.menu_root"/>
+    <menuitem name="Menu 2" id="fitxers.menu_2" parent="fitxers.menu_root"/>
+    <!-- actions -->
+    <menuitem name="List" id="fitxers.menu_1_list" parent="fitxers.menu_1" action="fitxers.action_window"/>
+  </data>
+</odoo>
